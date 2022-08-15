@@ -63,6 +63,32 @@ section.home {
   z-index: 20;
 }
 
+/* TOGGLE */
+.toggle {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: var(--primary-color) url(../images/menu.png);
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.toggle.active {
+  background: var(--primary-color) url(../images/close.png);
+  background-size: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navagation {
+  display: none;
+}
+
 .home-img {
   position: absolute;
   bottom: 0;
@@ -70,6 +96,3 @@ section.home {
   height: 110%;
 }
 
-.navagation {
-  display: none;
-}
