@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-
+/* CUSTOM PROPERTY */
+:root {
+  --primary-color: #f60f20;
+}
 
 /* BASE STYLES */
 * {
@@ -72,7 +75,7 @@ section.home {
   right: 0;
   width: 60px;
   height: 60px;
-  background: #f60f20 url(../images/menu.png);
+  background: var(--primary-color) url(../images/menu.png);
   background-size: 30px;
   background-position: center;
   background-repeat: no-repeat;
@@ -80,12 +83,12 @@ section.home {
   cursor: pointer;
 }
 
-/* .toggle.active {
+.toggle.active {
   background: var(--primary-color) url(../images/close.png);
   background-size: 25px;
   background-position: center;
   background-repeat: no-repeat;
-} */
+}
 
 /* NAVAGATION
 .navagation {
